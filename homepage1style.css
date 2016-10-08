@@ -3,7 +3,7 @@
 
 #header{
   border-radius: 0%;
-  padding: 5px;
+  padding-bottom: 5px;
   font-family: Megrim, cursive;
   font-size: 200%;
   font-weight: bold;
@@ -13,7 +13,7 @@
 
 #main-content{
   margin-top: 100px;
-  margin-left: 17px;
+  margin-left: 0px;
 }
 
 /*!
