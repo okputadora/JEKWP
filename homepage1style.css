@@ -1,6 +1,8 @@
 /* My own CSS Classes*/
 
-
+*{
+  border: 1px solid red !important;
+}
 #header{
   border-radius: 0%;
   font-family: Megrim, cursive;
@@ -13,6 +15,16 @@
 #main-content{
   margin-top: 50px;
   margin-left: 15px;
+  font-size: 150%;
+}
+.images{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:fixed;
+}
+#img1{
+
 }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
