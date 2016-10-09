@@ -3,7 +3,6 @@
 
 #header{
   border-radius: 0%;
-  padding-bottom: 5px;
   font-family: Megrim, cursive;
   font-size: 200%;
   font-weight: bold;
@@ -12,14 +11,9 @@
 }
 
 #main-content{
-  margin-top: 100px;
-  margin-left: 0px;
+  margin-top: 50px;
+  margin-left: 15px;
 }
-
-#shopping{
-  margin-right: 
-}
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -4509,7 +4503,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    margin-right: 0px;
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
