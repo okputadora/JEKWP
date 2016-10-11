@@ -29,6 +29,7 @@
   left: 50%;
   margin-top: -5%;/* Negative half of height. */
   margin-left: 10%; /* Negative half of width. */
+  padding: 5px;
 }
 
 }
