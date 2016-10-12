@@ -3,9 +3,6 @@
 *{
   border: 1px solid red !important;
 }
-a {
-  text-decoration: none !important;
-}
 #header{
   border-radius: 0%;
   font-family: Megrim, cursive;
@@ -13,18 +10,6 @@ a {
   font-weight: bold;
   opacity: 1;
   background-color: black;
-}
-
-.dropdown-content{
-  display: none;
-}
-
-.dropdown-container{
-  position: relative;
-  display: inline-block;
-}
-.dropdown-container:hover .dropdown-content{
-  display: block;
 }
 
 
