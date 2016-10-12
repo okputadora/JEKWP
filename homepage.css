@@ -93,13 +93,6 @@ ul{
 
 }
 
-.slideshow{
-  opacity: 0.8;
-}
-.slideshow.fadeout{
-  opacity: 0; transition: 3s;
-}
-
 .ticker{
   height: 50px;
   display: flex;
