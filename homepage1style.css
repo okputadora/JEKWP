@@ -1,7 +1,7 @@
 /* My own CSS Classes*/
 
 *{
-  border: 1px solid red !important;
+  /*border: 1px solid red !important;*/
 }
 #header{
   border-radius: 0%;
@@ -11,7 +11,6 @@
   opacity: 1;
   background-color: black;
 }
-
 
 #title{
   font-family: Megrim, cursive;
@@ -3564,14 +3563,12 @@ tbody.collapse.in {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: 20px;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: black;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, .15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
@@ -3592,7 +3589,7 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #333;
+  color: white;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
