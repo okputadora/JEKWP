@@ -48,9 +48,13 @@
   <div class="main-id">
     <div class="row">
       <div class="col-md-12">
-        <img class="slideshow" id="currentSlide" src="lunarspacezoom.jpg"
-          width= 100%
-          height = 100% />
+        <ul id="slideContainer">
+          <li><img class="slide showing" src="lunarspacezoom.jpg"></li>
+          <li><img class="slide" src="resinmanzoom.jpg"></li>
+          <li><img class="slide" src="healthcarezoom.jpg"></li>
+          <li><img class="slide" src="oldbirdzoom.jpg"></li>
+        </ul>
+
       </div>
     </div>
   </div>
@@ -59,16 +63,16 @@
     <div class="row">
       <div class="col-md-4"></div>
       <div class="col-md-1">
-        <div class="circle-1"></div>
+        <button class="circle-1" id="c1"></button>
       </div>
       <div class="col-md-1">
-        <div class="circle-1"></div>
+        <button class="circle-1" id="c2"></button>
       </div>
       <div class="col-md-1">
-        <div class="circle-1"></div>
+        <button class="circle-1" id="c3"></button>
       </div>
       <div class="col-md-1">
-        <div class="circle-1"></div>
+        <button class="circle-1" id ="c4"></button>
       </div>
       <div class="col-md-4"></div>
       </div>
@@ -78,4 +82,6 @@
 </body>
 
 <script src= "jQuery.js"></script>
+<!--Needed for jquery functions -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src= "homepage.js"></script>

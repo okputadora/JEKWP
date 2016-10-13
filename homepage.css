@@ -1,5 +1,5 @@
 *{
-  border: 1px solid red !important;
+  /*border: 1px solid red !important;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -8,6 +8,9 @@
   padding: 0;
   margin: 0;
   border: 0;
+}
+a{
+  font-size: 30px;
 }
 
 a:link{
@@ -43,12 +46,10 @@ a:hover{
 
 .col-md-4{
   width: 33%;
-  align-items: center;
 }
 
 .col-md-12{
   width: 100%;
-  align-self: stretch;
 }
 
 .header{
@@ -75,6 +76,7 @@ ul{
 }
 
 .drpbutton:hover .dropdown-content{
+  font-size: 150%;
   display: block;
   color: red;
 }
@@ -90,15 +92,36 @@ ul{
 .main-id{
   border-bottom: thick black;
   border-bottom-style: solid;
+}
+#slideContainer{
+  position: relative;
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
 
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 2s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
 }
 
 .ticker{
   height: 50px;
   display: flex;
   align-items: center;
-  border-bottom:thick black;
-  border-bottom-style: solid;
+
 }
 .circle-1{
   display: flex;
@@ -110,4 +133,8 @@ ul{
   background-color: #FFF9E6;
   margin: 0 auto;
   opacity: .8;
+}
+
+.circle-1:hover{
+  cursor: pointer;
 }
