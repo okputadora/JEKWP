@@ -9,6 +9,11 @@
   margin: 0;
   border: 0;
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}
 .header{
   box-shadow: 0px 0px 10px black;
 }
@@ -61,6 +66,38 @@ h1{
 }
 h2{
   align-self: flex-end;
+}
+.header-btn:hover{
+  font-weight: bold;
+}
+
+.gal{
+  position: relative;
+  display: inline-block;
+}
+
+.gal-content{
+  display: none;
+  position: absolute;
+  background-color: black;
+  opacity: .6;
+  font-size: 30px;
+  width: 300px;
+  padding-top: 8px;
+}
+
+.gal:hover .gal-content{
+  display:flex;
+  flex-direction: column;
+}
+
+div.gal-content a{
+  padding: 10px;
+  border-bottom: thin solid white;
+}
+div.gal-content a:hover{
+  font-weight: bold;
+  opacity: 1;
 }
 
 ul{
