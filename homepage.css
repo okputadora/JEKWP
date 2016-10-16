@@ -71,12 +71,13 @@ h2{
   font-weight: bold;
 }
 
-.gal{
+.gal, .shop{
   position: relative;
   display: inline-block;
 }
 
-.gal-content{
+
+.gal-content, .shop-content{
   display: none;
   position: absolute;
   background-color: black;
@@ -86,16 +87,17 @@ h2{
   padding-top: 15px;
 }
 
-.gal:hover .gal-content{
+.gal:hover .gal-content, .shop:hover .shop-content{
   display:flex;
   flex-direction: column;
 }
 
-div.gal-content a{
+
+div.gal-content a, div.shop-content a{
   padding: 10px;
   border-bottom: thin solid white;
 }
-div.gal-content a:hover{
+div.gal-content a:hover, div.shop-content a:hover{
   font-weight: bold;
   opacity: 1;
 }
