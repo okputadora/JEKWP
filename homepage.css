@@ -36,6 +36,7 @@ a{
   box-shadow: 0 0 20px black;
   padding-left: 8%;
   height: 43px;
+  overflow: hidden;
 }
 
 #nav-menu{
@@ -105,9 +106,12 @@ ul{
   font-size: 20px;
 }
 
+
 #slideContainer{
   position: relative;
-  height: 820px;
+  height: 800px;
+  width: 1850px;
+  overflow: hidden;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -123,11 +127,13 @@ ul{
   opacity: 0;
   z-index: 1;
   transition: opacity 2s;
+  overflow: hidden;
 }
 
 .showing{
   opacity: 1;
   z-index: 2;
+  overflow: hidden;
 }
 
 .ticker{
