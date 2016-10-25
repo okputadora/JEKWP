@@ -10,20 +10,30 @@
   border: 0;
 }
 
+body{
+  /*height: 100%;*/
+}
 a{
   text-decoration: none;
   color: white;
 }
+
 .header{
-  box-shadow: 0px 0px 10px black;
-  z-index: 2;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 0 20px black;
+  background-color: black;
+  color: white;
+  height: 70px;
 }
+
 .header-btn{
   text-decoration: none;
   color: white;
   font-size: 30px;
   padding: 5px;
 }
+
 #title{
   font-weight: bolder;
   font-size: 45px;
@@ -32,12 +42,10 @@ a{
 #logo-wrap{
   display: flex;
   flex-direction: row;
-  background-color: black;
-  color: white;
-  box-shadow: 0 0 20px black;
   padding-left: 8%;
   height: 70px;
   align-items: flex-end;
+
 }
 
 #nav-menu{
@@ -45,10 +53,6 @@ a{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: white;
-  background-color: black;
-  box-shadow: 0 0 20px black;
-  height: 70px;
   align-items: center;
   transition: all 2s;
 }
@@ -101,11 +105,6 @@ div.gal-content a:hover, div.shop-content a:hover{
   opacity: 1;
 }
 
-ul{
-  text-decoration: none;
-  font-size: 20px;
-}
-
 #slideshow{
   padding-top: 18px;
   max-width: 100%;
@@ -116,35 +115,6 @@ ul{
   background-size: cover;
   z-index: 1;
   transition: 3s;
-}
-
-#slideContainer{
-  position: relative;
-  height: 850px;;
-  width: 100%;
-  overflow: hidden;
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-  z-index: -1;
-}
-
-.slide{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-  transition: opacity 1s;
-  overflow: hidden;
-}
-
-.showing{
-  opacity: 1;
-  z-index: 2;
-  overflow: hidden;
 }
 
 .ticker{
