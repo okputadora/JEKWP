@@ -128,7 +128,7 @@ div.gal-content a:hover, div.shop-content a:hover{
   transition: 2s;
 
 }
-.circle-1{
+.circle{
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -140,6 +140,6 @@ div.gal-content a:hover, div.shop-content a:hover{
 }
 
 
-.circle-1:hover{
+.circle:hover{
   cursor: pointer;
 }
