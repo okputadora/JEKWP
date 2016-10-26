@@ -7,15 +7,15 @@ $(document).ready(function(){
                 "degradation2.jpg", "degradation3.jpg"];
   var currentSlide = 0;
   var ticker = document.getElementsByClassName("circle");
-  ticker[currentSlide].style.backgroundColor = "white";
+  ticker[currentSlide].style.border = "inset 2px #C3C3C3";;
   var slideInterval = setInterval(nextSlide, 4000);
   //listen for button clicking
 
   console.log(slides);
   function nextSlide() {
-      //If a button in pressed
+      //If a button is pressed
       $(".circle").on("click", function(){
-        ticker[currentSlide].style.backgroundColor = "black";
+        ticker[currentSlide].style.border = "outset 2px #C3C3C3";
         clearInterval(slideInterval);
         var buttonId = this.id;
         if (buttonId == "c0"){
@@ -39,13 +39,13 @@ $(document).ready(function(){
         else if (buttonId == "c6"){
           currentSlide = 6;
         }
-        ticker[currentSlide].style.backgroundColor = "white";
+        ticker[currentSlide].style.border = "inset 2px #C3C3C3";
         document.getElementById("slideshow").style.backgroundImage =
         "url(" + slides[currentSlide] + ")";
         slideInterval = setInterval(nextSlide, 4000);
       });
-    //If not button is pressed just cycle automatically
-    ticker[currentSlide].style.backgroundColor = "black";
+    //If button is not pressed just cycle automatically
+    ticker[currentSlide].style.border = "outset 2px #C3C3C3";
     if (currentSlide >= slides.length -1){
       currentSlide = -1;
     }
@@ -57,7 +57,7 @@ $(document).ready(function(){
 
     //Reveal slide and change ticker to black
     slides[currentSlide].className = 'slide showing';
-    ticker[currentSlide].style.backgroundColor = "white";
+    ticker[currentSlide].style.border = "inset 2px #C3C3C3";
     console.log(currentSlide);
   }
 });
