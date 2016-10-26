@@ -1,5 +1,5 @@
 *{
-  border: 1px solid red !important;
+  /*border: 1px solid red !important;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -96,7 +96,7 @@ h2{
   background-color: black;
   opacity: .7;
   font-size: 30px;
-  width: 300px;
+  width: 254px;
   padding-top: 15px;
 }
 
@@ -110,7 +110,8 @@ h2{
   padding: 10px;
   border-bottom: thin solid white;
 }
-#nav-menu > div > div > a:hover{
+#nav-menu > div > div > a:hover, #nav-menu > div > div >
+a:hover i{
   font-weight: bold;
   opacity: 1;
 }
