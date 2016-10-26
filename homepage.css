@@ -1,5 +1,5 @@
 *{
-  /*border: 1px solid red !important;*/
+  border: 1px solid red !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -10,8 +10,14 @@
   border: 0;
 }
 
-body{
-  /*height: 100%;*/
+.fluid-container{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+html, body{
+  height: 100%;
 }
 a{
   text-decoration: none;
@@ -19,12 +25,14 @@ a{
 }
 
 .header{
+  flex-grow: 0;
+  flex-basis: 70px;
   width: 100%;
   position: absolute;
   box-shadow: 0 0 20px black;
   background-color: black;
   color: white;
-  height: 70px;
+  z-index: 1000;
 }
 
 .header-btn{
@@ -76,12 +84,13 @@ h2{
   font-weight: bold;
 }
 
-.gal, .shop{
+/*children of nav-menu i.e. drop down containers*/
+#nav-menu > div{
   position: relative;
   display: inline-block;
 }
 
-.gal-content, .shop-content{
+.gal-content, .shop-content, .events-content, .contact-content{
   display: none;
   position: absolute;
   background-color: black;
@@ -91,34 +100,37 @@ h2{
   padding-top: 15px;
 }
 
-.gal:hover .gal-content, .shop:hover .shop-content{
+.gal:hover .gal-content, .shop:hover .shop-content,
+.events:hover .events-content, .contact:hover .contact-content{
   display:flex;
   flex-direction: column;
 }
 
-div.gal-content a, div.shop-content a{
+#nav-menu > div > div > a{
   padding: 10px;
   border-bottom: thin solid white;
 }
-div.gal-content a:hover, div.shop-content a:hover{
+#nav-menu > div > div > a:hover{
   font-weight: bold;
   opacity: 1;
 }
 
 #slideshow{
+  flex-grow: 0;
   padding-top: 18px;
   max-width: 100%;
-  height: 870px;
+  height: 880px;
   background-image: url("faceszoom.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  transition: 3s;
+  transition: 2s;
 }
 
 .ticker{
-  height: 48px;
+  flex-grow: 1;
+  flex-basis: 80px;
   display: flex;
   justify-content: center;
   align-items: top;
