@@ -1,0 +1,187 @@
+
+
+*{
+  border: 1px solid red !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Megrim', cursive;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*hide mobile features*/
+#mobile-menu, #menu-container{
+  display: none;
+  border: none;
+}
+
+.fluid-container{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  /*margin-right: 20px;*/
+}
+
+.header{
+  flex-grow: 0;
+  flex-basis: 70px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 20px black;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+}
+
+.header-btn{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+}
+
+#title{
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+#title:hover{
+  cursor: default;
+}
+
+#logo-wrap{
+  display: flex;
+  flex-direction: row;
+  padding-left: 8%;
+  height: 100px;
+  align-items: center;
+}
+
+#nav-menu{
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 2s;
+  height: 100px;
+}
+
+.header:hover #nav-menu{
+  display: flex;
+}
+
+.header:hover #logo-wrap{
+  display: none;
+}
+h1{
+  font-size: 45px;
+  margin-right: 20px;
+  margin-bottom: -10px;
+}
+h2{
+  align-self: flex-end;
+}
+.header-btn:hover{
+  font-weight: bold;
+}
+
+/*children of nav-menu i.e. drop down containers*/
+#nav-menu > div{
+  position: relative;
+  display: inline-block;
+  margin-bottom: -20px;
+}
+
+.content{
+  display: none;
+  position: absolute;
+  background-color: black;
+  opacity: .7;
+  font-size: 30px;
+  width: 254px;
+  padding-top: 25px;
+}
+
+#gal:hover #gal-content, #shop:hover #shop-content,
+#events:hover #events-content, #contact:hover #contact-content{
+  display:flex;
+  flex-direction: column;
+}
+
+.content > a{
+  padding: 10px;
+  border-bottom: thin solid white;
+}
+#nav-menu > div > div > a:hover, #nav-menu > div > div >
+a:hover i{
+  font-weight: bold;
+  opacity: 1;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/*Mobile Friendly*/
+@media only screen and (max-width: 800px) {
+  #logo-wrap > h1{
+    font-size: 25px;
+    padding: 0;
+  }
+  #mobile-menu{
+    display: inline;
+    padding-right: 25px;
+    font-size: 30px;
+  }
+  /*Remove nav-menu on click*/
+  .header:hover #logo-wrap{
+    display: flex;
+  }
+  .header:hover #nav-menu{
+    display: none;
+  }
+  /*Reformat nav-menu and drp-dwn menus*/
+  .header-btn{
+    font-size: 25px;
+  }
+  /*Hide the drop down menus in mobile mode and make them
+  appear in the cetner of the slideshow instead (this will
+  be done in the js)*/
+  #gal:hover #gal-content, #shop:hover #shop-content,
+  #events:hover #events-content, #contact:hover #contact-content{
+    display:none;
+  }
+  #menu-container{
+    display: none;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    z-index: 2000;
+    font-size: 25px;
+    color: red;
+    height: auto;
+    width: auto;
+    background-color: black;
+    opacity: .6;
+    /*border: 1px solid white;*/
+  }
+
+  .line{
+    margin: 10px;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+  }
+}
