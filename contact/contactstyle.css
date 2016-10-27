@@ -1,7 +1,7 @@
 
 
 *{
-  border: 1px solid red !important;
+  /*border: 1px solid red !important;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -23,6 +23,7 @@
   flex-direction: column;
   position:absolute;
   width: 100%;
+  padding-bottom: 400px;
 }
 
 a{
@@ -88,9 +89,7 @@ h1{
   margin-right: 20px;
   margin-bottom: -10px;
 }
-h2{
-  align-self: flex-end;
-}
+
 .header-btn:hover{
   font-weight: bold;
 }
@@ -128,11 +127,180 @@ a:hover i{
   opacity: 1;
 }
 
+.side-nav{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 1000px;
+  justify-content: center;
+  margin-left: 50px;
+}
+button:focus,
+button.active{
+  box-shadow: none;
+  outline: 0;
+  background-image: none;
+}
+.side-nav-container{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 10px;
+
+}
+
+.side-nav-container > button{
+  margin: 5px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+.side-nav-container > button:hover{
+  margin: 5px 0 5px 0;
+  transition: ease-in .3s;
+  transform: rotate3d(360deg);
+  font-size: 35px;
+}
+
+/*Colors for side nav-bar*/
+.msg{background-color: #66D182;}
+.mail{background-color: #DA4A38;}
+.fb{background-color: darkslateblue;}
+.dev{background-color: black;}
+
+
 .row{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  height: 1000px;
 }
+
+#first{
+  justify-content: flex-start;
+}
+
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 30px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+#contact-form{
+  height: 800px;
+}
+
+.contact-header{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 20px black;
+}
+
+.contact-header > h2{
+  background-color: black;
+  color: white;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 25px;
+}
+
+label{
+  margin-left: 10px;
+  font-weight: bolder;
+}
+input{
+  background-color: whitesmoke;
+  margin: 5px 10px 10px 10px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-family: monospace;
+
+}
+textarea{
+  margin: 5px 10px 10px 10px;
+  height: 470px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 25px;
+  font-family: monospace;
+
+}
+
+#submit{
+  color: white;
+  background-color: #66D182;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: Megrim;
+  box-shadow: 0 0 10px black;
+  margin-top: 10px;
+}
+#submit:hover{
+  cursor: pointer;
+}
+#facebook, #mailing, #developer{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  align-self: center;
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid black;
+}
+
+#facebook > a{
+  color: darkslateblue;
+  font-size: 100px;
+}
+#mailing{
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid black;
+}
+#mailing > i{
+  margin: 10px 0 10px 0;
+}
+
+#mailing > p{
+  font-size: 20px;
+  margin: 5px;
+}
+
+#developer-contact{
+  display: flex;
+  flex-direction: row;
+}
+
+#developer-contact > a{
+  color: black;
+  margin: 10px;
+}
+
 
 /*Mobile Friendly*/
 @media only screen and (max-width: 800px) {
@@ -170,7 +338,7 @@ a:hover i{
     align-items: center;
     z-index: 2000;
     font-size: 25px;
-    color: red;
+    color: white;
     height: auto;
     width: auto;
     background-color: black;
@@ -183,5 +351,28 @@ a:hover i{
     display: flex;
     padding: 5px;
     flex-direction: row;
+  }
+
+  .contact-box, #contact-form, #facebook, #mailing, #developer{
+    height: 400px;
+    width: 300px;
+    margin: 0px;
+
+}
+  .contact-header{
+    height:40px;
+  }
+  .contact-header > h2, #submit{
+      font-size: 25px;
+  }
+  #submit{
+    height:40px;
+    font-size: 20px;
+  }
+
+  textarea{
+    height: 200px;
+    font-size: 20px;
+  }
   }
 }

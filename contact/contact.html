@@ -67,26 +67,67 @@
         </div>
       </div>
 
+    <!-- Side navigation menu -->
+    <div class="side-nav">
+      <div class="side-nav-container">
+        <button class="msg"><i class="fa fa-comment" aria-hidden="true"></i></button>
+        <button class="mail"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+        <button class="fb"><i class="fa fa-facebook-square" aria-hidden="true"></i></button>
+        <Button class="dev"><i class="fa fa-laptop" aria-hidden="true"></i></Button>
+      </div>
+    </div>
+
     <!-- Generic contact form -->
-    <div class="row">
+    <div class="row" id="first">
       <div class="contact-box" id="contact-form">
-        <h1>Contact</h1>
+        <div class="contact-header">
+          <h2>Contact</h2>
+        </div>
+          <form>
+            <label>Name</label>
+            <input name="name" />
+            <label>Email</label>
+            <input name="email" type="email" />
+            <label>Message</label>
+            <textarea name="message" placeholder="Gimmie Feedback..."></textarea>
+            <input id="submit" name="submit" type="submit" value="submit" />
+          </form>
       </div>
     </div>
-    <div class="row">
-      <div class="contact-box" id="facebook">
-        <h1>Facebook</h1>
-      </div>
-    </div>
-    <div class="row">
+
+    <!-- Mail -->
+    <div class="row" id="second">
       <div class="contact-box" id="mailing">
-          <h1>mail</h1>
+          <h3>Write us a letter</h3>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <p>Address line 1</p>
+          <p>Address line 2</p>
+          <p>Address line 3</p>
       </div>
     </div>
-    <div class="row">
-      <div class="contact-box" id="developer">
-        <h1>Developer</h1>
+
+    <!-- Facebook -->
+    <div class="row" id="third">
+      <div class="contact-box" id="facebook">
+        <h3>Hit me up on</h3>
+        <a href="https://www.facebook.com/joseph.krause.986">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
       </div>
     </div>
-  </div>
+
+
+      <!-- Developer -->
+      <div class="row" id="fourth">
+        <div class="contact-box" id="developer">
+          <h3>Conact this site's developer</h3>
+          <div id="developer-contact">
+            <a href="https://github.com/okputadora"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            <a href="mailto:okputadora@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/michael.mcveigh.773">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>

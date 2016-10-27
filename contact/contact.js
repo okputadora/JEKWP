@@ -1,11 +1,37 @@
 $(document).ready(function(){
+
+  //scroll to home when home is clicked
+  $(".msg").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".header").offset().top
+    }, 1000);
+  });
+  //scroll to projects
+  $(".mail").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#second").offset().top
+    }, 1000);
+  });
+  //scroll to contact
+  $(".fb").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#third").offset().top
+    }, 1000);
+  });
+  //scroll to contact
+  $(".dev").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#fourth").offset().top
+    }, 1000);
+  });
+
   //Display menu on click
   $(".fa-bars").on("click", function(){
     document.getElementById("nav-menu").style.display = "flex";
     document.getElementById("logo-wrap").style.display = "none";
     document.getElementById("title").style.display = "none";
   });
-  
+
   if ($(window).width() < 801){
     //Different /content for different drop dropdowns
     //Display dropdowns in center of screen
