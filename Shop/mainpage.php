@@ -26,18 +26,28 @@
   include_once("../navbarTemplate.php");
 ?>
 <div id="main-content">
-  <?php
-  while ($row = mysqli_fetch_array($response)){
-    $name = $row["product_name"];
-    $id = $row["product_id"];
-    $price = $row["product_price"];
-    $img = $row["product_image"];
-    $description = $row["product_details"];
-    $inStock = $row["product_inventory"];
-    $element = '<div class=product>' . $name . '</div>';
-    echo $element;
-  }
-  ?>
-</div>
+  <div id="side-nav">
+    <div class="side-nav-but">By Price, Low to High</div>
+    <div class="side-nav-but">By Price, High to Low</div>
+    <div class="side-nav-but">By Collection</div>
+    <div class="side-nav-but">By Medium</div>
+  </div>
+  <div id=product-list>
+    <?php
+    while ($row = mysqli_fetch_array($response)){
+      $name = $row["product_name"];
+      $id = $row["product_id"];
+      $price = $row["product_price"];
+      $img = $row["product_image"];
+      $description = $row["product_details"];
+      $inStock = $row["product_inventory"];
+      $element = '<div class=product id="product' . $id . '"><img src="imgs/'
+      . $id . '.jpg" /><div class="details"><h3>'. $name .'</h3><h4 id="cart'
+      . $id .'">Add To Cart</h4></div><h4>$' . $price .'</h4></div>';
+      echo $element;
+    }
+    ?>
+  </div>
+  </div>
 
 </body>
