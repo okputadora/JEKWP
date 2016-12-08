@@ -42,8 +42,8 @@
       $description = $row["product_details"];
       $inStock = $row["product_inventory"];
       $element = '<div class=product id="product' . $id . '"><img src="imgs/'
-      . $id . '.jpg" /><div class="details"><h3>'. $name .'</h3><h4 id="cart'
-      . $id .'">Add To Cart</h4></div><h4>$' . $price .'</h4></div>';
+      . $id . '.jpg" /><div class="text"><div class="details"><h3>'. $name .'</h3><h4 id="cart'
+      . $id .'">Add To Cart</h4></div><h4>$' . $price .'</h4></div></div>';
       echo $element;
     }
     ?>
