@@ -14,6 +14,7 @@
   <!--link javascript-->
 
 <head>
+<script src="https://use.fontawesome.com/041a8a6fad.js"></script>
 <body>
 <?php
   include("storescripts/connect_to_mysql.php");
@@ -21,8 +22,7 @@
   $query = "SELECT * FROM productlist";
   $response = @mysqli_query($dbc, $query);
   $productCount = mysqli_num_rows($response);
-?>
-<?php
+
   include_once("../navbarTemplate.php");
 ?>
 <div id="main-content">
@@ -43,7 +43,7 @@
       $inStock = $row["product_inventory"];
       $element = '<div class=product id="product' . $id . '"><img src="imgs/'
       . $id . '.jpg" /><div class="text"><div class="details"><h3>'. $name .'</h3><h4 id="cart'
-      . $id .'">Add To Cart</h4></div><h4>$' . $price .'</h4></div></div>';
+      . $id .'">Add to cart</h4></div><h4>$' . $price .'</h4></div></div>';
       echo $element;
     }
     ?>
